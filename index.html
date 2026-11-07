@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>原来如此 · Now I See — 支持 Support</title>
+<meta name="description" content="「原来如此 · Now I See」近现代科技百科全书 App 支持页：免费与完整版、常见问题、联系方式。Support for Now I See, an illustrated encyclopedia of modern technology.">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #F7F3EC; --surface: #FFFDF9; --sunken: #EFEAE1; --hair: #E4DDD1;
+    --ink: #1D1B18; --ink2: #5F5A52; --ink3: #948D82;
+    --accent: #3D4FD8; --accent-soft: #E6E9FB; --gold: #B7862C; --gold-soft: #F7EDD6; --en-bar: #A9B3F2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #111214; --surface: #1B1C1F; --sunken: #24262A; --hair: #2E3035;
+      --ink: #F2EFE9; --ink2: #B4AEA4; --ink3: #7D7870;
+      --accent: #8C9BFF; --accent-soft: #23284A; --gold: #E2B65E; --gold-soft: #3A2F18; --en-bar: #4A55A0;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 72px; }
+  h1, h2, h3 { font-family: "Songti SC", "Source Han Serif SC", "Noto Serif CJK SC", "STSong", Georgia, serif; font-weight: 600; line-height: 1.35; }
+  h1 { font-size: 30px; margin: 0; }
+  h2 { font-size: 21px; margin: 44px 0 12px; }
+  h2 .en-title { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 400; font-size: 16px; color: var(--ink2); margin-left: 6px; }
+  p { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .hero { display: flex; gap: 18px; align-items: center; }
+  .hero img { width: 72px; height: 72px; border-radius: 17px; flex: none; box-shadow: 0 0 0 0.5px var(--hair), 0 8px 18px -10px rgba(40, 40, 120, .5); }
+  .subtitle { font-family: Georgia, "Times New Roman", serif; font-style: italic; color: var(--ink2); margin: 2px 0 0; }
+  .tag { color: var(--ink3); font-size: 13px; margin: 6px 0 0; }
+  nav.top { margin: 22px 0 0; font-size: 14px; }
+  nav.top a { margin-right: 16px; white-space: nowrap; display: inline-block; }
+  .card, .summary { background: var(--surface); border: 0.5px solid var(--hair); border-radius: 20px; padding: 20px 22px; margin-top: 24px; }
+  .summary { background: var(--accent-soft); border: none; }
+  .en { border-left: 3px solid var(--en-bar); padding-left: 12px; color: var(--ink2); }
+  .card .en, .summary .en { margin-bottom: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; table-layout: fixed; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 10px; border-bottom: 0.5px solid var(--hair); }
+  thead th { font-size: 13px; color: var(--ink2); font-weight: 600; border-bottom: 1px solid var(--hair); }
+  thead th:nth-child(1) { width: 20%; } thead th:nth-child(2) { width: 50%; } thead th:nth-child(3) { width: 30%; }
+  tbody th { font-weight: 600; }
+  td.full { color: var(--ink); }
+  .note { font-size: 14px; color: var(--ink2); margin-top: 14px; }
+  details { background: var(--surface); border: 0.5px solid var(--hair); border-radius: 16px; padding: 4px 18px; margin: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; padding: 12px 0; list-style-position: outside; }
+  details[open] summary { border-bottom: 0.5px solid var(--hair); margin-bottom: 12px; }
+  details p { font-size: 15px; }
+  .alert { background: var(--gold-soft); border-radius: 16px; padding: 16px 18px; }
+  .alert .en { margin-bottom: 0; }
+  .back { display: inline-block; font-size: 14px; margin-bottom: 18px; text-decoration: none; }
+  .contact { font-size: 18px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 0.5px solid var(--hair); font-size: 13px; color: var(--ink3); }
+  footer a { margin-right: 14px; white-space: nowrap; }
+  @media (max-width: 560px) {
+    h1 { font-size: 26px; }
+    thead { display: none; }
+    table, tbody, tr, th, td { display: block; width: 100%; }
+    tr { padding: 10px 0; border-bottom: 0.5px solid var(--hair); }
+    tbody th { padding: 4px 0; border: none; width: 100%; }
+    td { padding: 4px 0; border: none; }
+    td::before { content: attr(data-label); display: block; font-size: 12px; color: var(--ink3); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img src="icon.png" alt="原来如此 App 图标">
+    <div>
+      <h1>原来如此 · 近现代科技百科全书</h1>
+      <p class="subtitle" lang="en">Now I See — An Illustrated Encyclopedia of Modern Technology</p>
+      <p class="tag">iPhone · iPad App 支持页 · Support · <a href="https://nowisee.myheartand.me/">App 介绍</a></p>
+    </div>
+  </header>
+  <nav class="top"><a href="#free">免费与完整版</a><a href="#faq">常见问题</a><a href="#contact">联系我们</a><a href="privacy.html">隐私政策</a><a href="terms.html">使用条款</a></nav>
+
+  <div class="card">
+    <p>「原来如此」是一部讲清「它为什么行得通」的近现代科技百科全书：从 1712 年的蒸汽机到今天的大模型，17 个领域、997 个词条，每一条都追到背后的第一性原理。中文、英文、中英对照三种读法，配 183 幅矢量图解、25 个互动实验、7 条学习路线和间隔重复复习卡。内容全部装在 App 里，离线可读，不用注册登录。</p>
+    <p class="en" lang="en">An illustrated encyclopedia of modern technology that explains why things work — from the 1712 steam engine to today's large language models. 997 entries across 17 domains, each traced back to the first principles behind it, in Chinese, English or side by side, with 183 vector diagrams, 25 hands-on labs, 7 learning paths and spaced-repetition review cards. Everything is in the app: it works offline and needs no account.</p>
+  </div>
+
+  <h2 id="free">免费与完整版 <span class="en-title" lang="en">Free vs. Full Version</span></h2>
+  <table>
+    <thead><tr><th></th><th>免费 Free</th><th>完整版 Full Version</th></tr></thead>
+    <tbody>
+      <tr>
+        <th>词条</th>
+        <td data-label="免费">「能源与动力」「电与电子」「计算与软件」3 个领域的 271 个词条全文；其余 14 个领域的每个词条可以试读「一句话」定义和正文第一部分</td>
+        <td data-label="完整版" class="full">17 个领域、全部 997 个词条全文</td>
+      </tr>
+      <tr>
+        <th>第一性原理与导读</th>
+        <td data-label="免费" colspan="2">全部免费：59 条第一性原理、怎么读这本书、全书地图、第一性原理导读、17 篇资料来源与核实记录</td>
+      </tr>
+      <tr>
+        <th>图解</th>
+        <td data-label="免费">免费词条里的图解</td>
+        <td data-label="完整版" class="full">全部 183 幅，中英两版</td>
+      </tr>
+      <tr>
+        <th>互动实验</th>
+        <td data-label="免费">13 个：11 个入门实验（逻辑门、二进制、欧姆定律、高压输电、梯度下降、数据包、火箭方程、卡诺效率、PCR、凯撒密码、平方—立方定律）+ 2 个进阶模拟（神经网络分类、牛顿炮弹与轨道）</td>
+        <td data-label="完整版" class="full">全部 25 个，含 14 个进阶模拟</td>
+      </tr>
+      <tr>
+        <th>始终免费</th>
+        <td data-label="免费" colspan="2">7 条学习路线的 35 节导学和小测、错题本、间隔重复复习卡、全文搜索（含拼音首字母）、大事年表、中英文索引、词条总表、知识关系图、今日词条、收藏与笔记、学习记录导出导入、朗读（能读到的部分都能听）</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="note">完整版是<strong>一次性购买</strong>，不是订阅，不会自动续费；支持家人共享。在 App 里点任意带锁的内容，或打开「我的 → 设置 → 完整版」即可购买或恢复购买。</p>
+  <p class="note en" lang="en">The Full Version is a one-time purchase — not a subscription, nothing renews — and supports Family Sharing. Tap anything with a lock in the app, or open Me → Settings → Full Version, to buy or restore.</p>
+
+  <h2 id="faq">常见问题 <span class="en-title" lang="en">FAQ</span></h2>
+
+  <details>
+    <summary>需要什么设备和系统？</summary>
+    <p>iPhone 或 iPad，系统需要 iOS / iPadOS 26 或更新版本。界面和正文都有中文、英文两种语言，还可以中英对照阅读，在「设置 → 语言」里随时切换。</p>
+    <p class="en" lang="en">An iPhone or iPad running iOS / iPadOS 26 or later. The interface and the text are available in Chinese and English, and you can read both side by side; switch any time in Settings → Language.</p>
+  </details>
+
+  <details>
+    <summary>换了设备或重装后，怎么恢复完整版？</summary>
+    <p>打开「我的」→ 右上角「设置」→「完整版」→「恢复购买」，用当初购买时的 Apple 账户登录 App Store 即可，不会重复扣费。</p>
+    <p class="en" lang="en">Open Me → Settings → Full Version → Restore Purchases while signed in with the Apple Account you bought it with. You won't be charged again.</p>
+  </details>
+
+  <details>
+    <summary>家人可以一起用吗？</summary>
+    <p>可以，完整版支持「家人共享」。在系统设置里开启家人共享和「购买项目共享」后，家庭成员在自己的设备上就能使用；如果没有马上解锁，点一下「恢复购买」。</p>
+    <p class="en" lang="en">Yes — the Full Version supports Family Sharing. With Family Sharing and Purchase Sharing turned on, family members can use it on their own devices; if it doesn't unlock right away, tap Restore Purchases.</p>
+  </details>
+
+  <details>
+    <summary>学习记录能在 iPhone 和 iPad 之间同步吗？</summary>
+    <p>学习记录（已读、收藏、笔记、小测、复习卡）只保存在当前设备上，不会自动同步。换设备时，用「设置 → 数据 → 导出学习记录」生成一个 JSON 文件，在另一台设备上「导入学习记录」即可；导入是合并，不会删掉已有的记录。</p>
+    <p class="en" lang="en">Your learning record (read entries, bookmarks, notes, quizzes and review cards) stays on the device and doesn't sync automatically. To move it, use Settings → Data → Export learning record to save a JSON file, then Import learning record on the other device. Importing merges and never deletes what's already there.</p>
+  </details>
+
+  <details>
+    <summary>朗读没有声音？</summary>
+    <p>朗读走的是媒体音量：先按音量键调大音量，再看看是不是连着蓝牙耳机或音箱。想要更自然的声音，可以在「系统设置 → 辅助功能 → 朗读内容 → 声音」里下载中文和英文的增强语音。</p>
+    <p class="en" lang="en">Read-aloud uses media volume: turn the volume up and check for connected Bluetooth headphones or speakers. For more natural voices, download enhanced Chinese and English voices in Settings → Accessibility → Spoken Content → Voices.</p>
+  </details>
+
+  <details>
+    <summary>怎么申请退款？</summary>
+    <p>购买和付款都由 Apple 处理，开发者看不到订单，也无法直接退款。请到 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 登录你的 Apple 账户申请。</p>
+    <p class="en" lang="en">Purchases are handled by Apple; we can't see orders or issue refunds. Please request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+  </details>
+
+  <details>
+    <summary>书里的数字和年份可靠吗？</summary>
+    <p>每个领域都附有一篇「资料来源与核实记录」，列出关键数字和年份的出处，在 App 的「全书 → 资料来源」里可以看到。发现错误欢迎告诉我们。</p>
+    <p class="en" lang="en">Each domain comes with a "sources and verification" record listing where key numbers and dates come from — see Book → Sources in the app. If you spot a mistake, please tell us.</p>
+  </details>
+
+  <details>
+    <summary>发现错字或内容问题？</summary>
+    <p>欢迎发邮件告诉我们，写上词条名（比如「蒸汽机」）或附一张截图；App 里「设置 → 支持 → 写邮件反馈」会自动带上版本号。</p>
+    <p class="en" lang="en">Please email us with the entry name (e.g. "Steam engine") or a screenshot. Settings → Support → Send feedback by email fills in the app version for you.</p>
+  </details>
+
+  <h2 id="contact">联系我们 <span class="en-title" lang="en">Contact</span></h2>
+  <p>问题、建议和勘误都可以发邮件 · Questions, feedback and corrections:</p>
+  <p class="contact"><a href="mailto:dongxiyunei@gmail.com?subject=%E5%8E%9F%E6%9D%A5%E5%A6%82%E6%AD%A4%20%E5%8F%8D%E9%A6%88">dongxiyunei@gmail.com</a></p>
+
+  <footer>
+    <a href="privacy.html">隐私政策 Privacy</a><a href="terms.html">使用条款 Terms</a><a href="https://nowisee.myheartand.me/">App 介绍 About the app</a>
+    <p style="margin-top:10px">© 2026 Teancum Tian</p>
+  </footer>
+</main>
+</body>
+</html>
